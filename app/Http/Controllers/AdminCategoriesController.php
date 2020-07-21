@@ -13,7 +13,7 @@ class AdminCategoriesController extends Controller
     {
         //
         return view('category.index', [
-            'category' => Category::orderBy('created_at', 'desc')->paginate(10)
+            'categories' => Category::orderBy('created_at', 'desc')->paginate(10)
         ]);
     }
 
@@ -45,7 +45,7 @@ class AdminCategoriesController extends Controller
 
     public function edit($id){
         return view('category.edit', [
-            'category' => Category::where('id', $id)->first(),
+            'categories' => Category::where('id', $id)->first(),
         ]);
     }
 

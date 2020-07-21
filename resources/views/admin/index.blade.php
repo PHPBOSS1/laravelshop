@@ -75,7 +75,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             <span data-feather="file"></span>
-                            Список категорий
+                            <a href="/categories" class="card-link">Список категорий</a>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="file"></span>
+                            <a href="/category/create" class="card-link">Создание категории</a>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span data-feather="file"></span>
+                            <a href="/category/create" class="card-link">Редактирование категории</a>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -137,8 +149,9 @@
                 </ul>
             </div>
         </nav>
-
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         @yield('content')
+        </main>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
