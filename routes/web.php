@@ -21,9 +21,18 @@ Route::group(['middleware'  =>  'admin' ], function(){
     Route::get('/category/create ', 'AdminCategoriesController@create');
     Route::post("/categories/category/store", "AdminCategoriesController@store");
     Route::get("/categories", "AdminCategoriesController@index");
+    Route::get('/products', 'AdminProductsController@index');
+    Route::get('/product/create ', 'AdminProductsController@create');
+    Route::post("/products/product/store", "AdminProductsController@store");
+//            dd('stop');
+
     Route::get("/category/edit/{id}", "AdminCategoriesController@edit");
+//            dd('stop');
     Route::post("/categories/category/edit_store/{id}", "AdminCategoriesController@edit_store");
+    //            dd('stop');
+
     Route::get("/categories/category/delete/{id}", "AdminCategoriesController@destroy");
+
 });
 
 //Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth'] ], function () {

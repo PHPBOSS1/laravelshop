@@ -19,10 +19,9 @@ class CreateCategoriesTable extends Migration
             $table->text('text');
             $table->string('title');
             $table->string('slug')->unique();
-            $table->string('desription');
+            $table->text("description")->nullable();
             $table->string('keywords');
             $table->timestamps();
-            $table->bigIncrements('id');
             $table->unsignedBigInteger('category_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
         });

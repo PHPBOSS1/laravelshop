@@ -1,10 +1,10 @@
-    @if (Session::has('info'))
-        <div class="alert alert-success" role="alert">
-            {{ Session::get('info') }}
-        </div>
-    @endif
-    @extends('admin.index')
-    @section('content')
+@if (Session::has('info'))
+    <div class="alert alert-success" role="alert">
+        {{ Session::get('info') }}
+    </div>
+@endif
+@extends('admin.index')
+@section('content')
     <form action="/categories/category/edit_store/{{$category->id}}" method="POST">
         {{ csrf_field() }}
         <?php
@@ -32,28 +32,6 @@
                 <?  if($errors->first("title") != "") echo "<div class='alert'>".$errors->first("title")."</div>"; ?>
             </div>
         </div>
-<!--         --><?php //dd($categories); ?>
-{{--        <div class="form-group">--}}
-{{--            <label>Подкатегории</label>--}}
-{{--            <select class="form-control input-sm" name="category_id">--}}
-{{--<!--                --><?php //dd($categories); ?>--}}
-
-{{--                <option value="{{$category->id}}">--select--</option>--}}
-{{--                @foreach ($categories as $firstcategory)--}}
-
-{{--                    <option selected value="{{$firstcategory->id}}">{{$firstcategory->title}}</option>--}}
-{{--                    @if ($firstcategory->categories)--}}
-{{--                        @foreach ($firstcategory->categories as $subcategory)--}}
-{{--                            <option value="{{$subcategory->id}}">-----{{$subcategory->title}}</option>--}}
-{{--                        @endforeach--}}
-{{--                    @endif--}}
-{{--                @endforeach--}}
-{{--            </select>--}}
-{{--        </div>--}}
-
-
-
-
         <div class="form-group">
             <label>Подкатегории</label>
             <select  class="form-control input-sm" name="category_id">

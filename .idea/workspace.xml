@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fd4cb2bd-3d1a-4657-8788-c0981604742a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/categories.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/child_category.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bossphp.x.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bossphp.x.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminCategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminCategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckIfAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckIfAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_14_104340_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_14_104340_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/category/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +151,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1efYo4gRCK1zsWMj3r0FvESKm1R" />
@@ -144,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/category" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/product" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,7 +174,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/product" />
       <recent name="$PROJECT_DIR$/resources/views/category" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
   <component name="RunManager">
@@ -186,7 +209,24 @@
       <workItem from="1595138311648" duration="599000" />
       <workItem from="1595157520302" duration="599000" />
       <workItem from="1595265472468" duration="938000" />
-      <workItem from="1595311879010" duration="599000" />
+      <workItem from="1595311879010" duration="7082000" />
+      <workItem from="1595351684738" duration="3843000" />
+      <workItem from="1595392644984" duration="4763000" />
+      <workItem from="1595484320368" duration="3650000" />
+      <workItem from="1595506819034" duration="2153000" />
+      <workItem from="1595524817316" duration="1317000" />
+      <workItem from="1595566606706" duration="1411000" />
+      <workItem from="1595572340215" duration="11805000" />
+      <workItem from="1595743752279" duration="6604000" />
+      <workItem from="1595764783501" duration="6663000" />
+      <workItem from="1595783326548" duration="1708000" />
+      <workItem from="1595823951897" duration="13350000" />
+      <workItem from="1595870947603" duration="2086000" />
+      <workItem from="1595874094658" duration="1628000" />
+      <workItem from="1595921145936" duration="8198000" />
+      <workItem from="1595961453752" duration="1502000" />
+      <workItem from="1596002851869" duration="9590000" />
+      <workItem from="1596044242082" duration="2863000" />
     </task>
     <servers />
   </component>
@@ -202,21 +242,41 @@
       <screen x="65" y="27" width="1855" height="1053" />
     </state>
     <state x="784" y="286" width="398" height="534" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/65.27.1855.1053@65.27.1855.1053" timestamp="1594839669900" />
+    <state x="725" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1595937145685">
+      <screen x="65" y="27" width="1855" height="1053" />
+    </state>
+    <state x="725" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/65.27.1855.1053@65.27.1855.1053" timestamp="1595937145685" />
     <state x="770" y="296" width="424" height="513" key="FileChooserDialogImpl" timestamp="1594734354978">
       <screen x="65" y="27" width="1855" height="1053" />
     </state>
     <state x="770" y="296" width="424" height="513" key="FileChooserDialogImpl/65.27.1855.1053@65.27.1855.1053" timestamp="1594734354978" />
-    <state x="788" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1594991523418">
+    <state x="788" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1595313652211">
       <screen x="65" y="27" width="1855" height="1053" />
     </state>
-    <state x="788" y="478" width="399" height="149" key="NewPhpFileDialog/65.27.1855.1053@65.27.1855.1053" timestamp="1594991523418" />
+    <state x="788" y="478" width="399" height="149" key="NewPhpFileDialog/65.27.1855.1053@65.27.1855.1053" timestamp="1595313652211" />
     <state x="165" y="125" width="1655" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595077051430">
       <screen x="65" y="27" width="1855" height="1053" />
     </state>
     <state x="165" y="125" width="1655" height="855" key="com.intellij.history.integration.ui.views.FileHistoryDialog/65.27.1855.1053@65.27.1855.1053" timestamp="1595077051430" />
-    <state x="682" y="291" width="813" height="522" key="find.popup" timestamp="1594750934866">
-      <screen x="65" y="27" width="1855" height="1053" />
+    <state x="205" y="213" width="588" height="522" key="find.popup" timestamp="1595847407857">
+      <screen x="65" y="27" width="959" height="741" />
     </state>
     <state x="682" y="291" width="813" height="522" key="find.popup/65.27.1855.1053@65.27.1855.1053" timestamp="1594750934866" />
+    <state x="205" y="213" width="588" height="522" key="find.popup/65.27.959.741@65.27.959.741" timestamp="1595847407857" />
+    <state x="655" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1595765140865">
+      <screen x="65" y="27" width="1855" height="1053" />
+    </state>
+    <state x="655" y="257" width="672" height="678" key="search.everywhere.popup/65.27.1855.1053@65.27.1855.1053" timestamp="1595765140865" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/categories.blade.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

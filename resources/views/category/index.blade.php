@@ -14,6 +14,17 @@
             margin-bottom: 10px;
         }
     </style>
+
+        @foreach ($categories as $category)
+            {{$category->id}}{{$category->title}}
+            @if ($category->categories)
+                @foreach ($category->categories as $category)
+                   {{$category->id}}-----{{$category->title}}
+                @endforeach
+            @endif
+        @endforeach
+
+
     @forelse ($categories as $category)
         <div class="category card" style="width: 18rem;">
             <div class="card-body">

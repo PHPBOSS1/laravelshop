@@ -16,9 +16,9 @@
     <div class="p-4 mb-2"><h1>Создание категории</h1>
         <div class="form-group"><label for="inputDesription" class="col-xs-2 control-label">Введите описание(desription)</label>
             <div class="col-xs-10">
-                <input type="text" name="desription" class="form-control" placeholder="введите описание" id="desription"></div
+                <input type="text" name="description" class="form-control" placeholder="введите описание" id="description"></div
 
-            <?  if($errors->first("desription") != "") echo "<div class='alert'>".$errors->first("desription")."</div>"; ?>
+            <?  if($errors->first("description") != "") echo "<div class='alert'>".$errors->first("description")."</div>"; ?>
     </div>
     </div>
     <div> <label for="inputKeywords" class="col-xs-2 control-label">Введите keywords</label>
@@ -35,6 +35,29 @@
     </div>
     </div>
 
+    <div class="form-group">
+        <label>Подкатегории</label>
+        <select class="form-control input-sm" name="category_id">
+            <option value="">--select--</option>
+        @foreach ($categories as $category)
+                <option value="{{$category->id}}">{{$category->title}}</option>
+                @if ($category->categories)
+                    @foreach ($category->categories as $category)
+                            <option value="{{$category->id}}">-----{{$category->title}}</option>
+                        @endforeach
+                @endif
+            @endforeach
+        </select>
+    </div>
+{{--    <div class="form-group">--}}
+{{--        <label>Подкатегории</label>--}}
+{{--        <select class="form-control input-sm" name="category_id">--}}
+{{--            <option value="">--select--</option>--}}
+{{--            @foreach ($child_category->categories as $childCategory)--}}
+{{--                <option value="{{$childCategory->id}}">{{$childCategory->title}}</option>--}}
+{{--            @endforeach--}}
+{{--        </select>--}}
+{{--    </div>--}}
     <div><div class="form-group"><label for="inputslug" class="col-xs-2 control-label">Введите урл страницы</label>
         <div class="col-xs-10">
     <input type="text" name="slug" placeholder="Укажите slug"></div>
