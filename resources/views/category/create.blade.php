@@ -34,6 +34,7 @@
     <?  if($errors->first("title") != "") echo "<div class='alert'>".$errors->first("title")."</div>"; ?>
     </div>
     </div>
+{{--    {{dd($path)}}--}}
 
     <div class="form-group">
         <label>Подкатегории</label>
@@ -74,13 +75,8 @@
 
     <label for="">Статус</label>
     <select class="form-control" name="published">
-        <?php if(isset($categories->id)): ?>
-        <option value="0" <?php if($categories->published == 0): ?> selected="" <?php endif; ?>>Не опубликовано</option>
-        <option value="1" <?php if($categories->published == 1): ?> selected="" <?php endif; ?>>Опубликовано</option>
-        <?php else: ?>
         <option value="0">Не опубликовано</option>
         <option value="1">Опубликовано</option>
-        <?php endif; ?>
     </select>
     <input type="submit" value="Отправить">
 </form>

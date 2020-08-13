@@ -26,12 +26,12 @@ Route::group(['middleware'  =>  'admin' ], function(){
     Route::post("/products/product/store", "AdminProductsController@store");
 //            dd('stop');
 
-    Route::get("/category/edit/{id}", "AdminCategoriesController@edit");
+    Route::get("/product/edit/{id}", "AdminProductsController@edit");
 //            dd('stop');
-    Route::post("/categories/category/edit_store/{id}", "AdminCategoriesController@edit_store");
+    Route::post("/products/product/edit_store/{id}", "AdminProductsController@edit_store");
     //            dd('stop');
 
-    Route::get("/categories/category/delete/{id}", "AdminCategoriesController@destroy");
+    Route::get("/products/product/delete/{id}", "AdminProductsController@destroy");
 
 });
 
